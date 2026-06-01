@@ -7,7 +7,6 @@ import { BrainCircuit, Eye, EyeOff, Lock, User, Sparkles, ArrowRight } from 'luc
 import toast from 'react-hot-toast'
 
 const credentials = [
-  { role: 'Admin',       user: 'admin',       pass: 'admin123', color: 'blue' },
   { role: 'HR',          user: 'hr1',         pass: 'hr123', color: 'violet' },
   { role: 'Interviewer', user: 'interviewer1',pass: 'int123', color: 'emerald' },
 ]
@@ -205,7 +204,9 @@ export default function Login() {
               >
                 <div className="relative flex items-center justify-center mb-6">
                   <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-slate-100"></div></div>
-                  <span className="relative bg-white px-4 text-[11px] font-bold text-slate-400 uppercase tracking-[2px]">Demo Access</span>
+                                      <span className="relative bg-white px-4 text-[11px] font-bold text-slate-400 uppercase tracking-[2px]">
+                      Demo Access (HR & Interviewer)
+                    </span>
                 </div>
                 
                 <div className="grid grid-cols-3 gap-3">
