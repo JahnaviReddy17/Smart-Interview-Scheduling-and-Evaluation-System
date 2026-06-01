@@ -25,4 +25,9 @@ public class AuthController {
     public ResponseEntity<Map<String, String>> me(java.security.Principal principal) {
         return ResponseEntity.ok(Map.of("username", principal.getName()));
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "Auth working";
+    }
 }
