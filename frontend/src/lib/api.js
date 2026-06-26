@@ -1,7 +1,8 @@
+
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://sies-server-production.up.railway.app',
+  baseURL: 'https://sies-backend.onrender.com/api',   // ← your Render URL
   headers: { 'Content-Type': 'application/json' }
 })
 
